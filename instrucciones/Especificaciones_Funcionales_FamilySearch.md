@@ -18,15 +18,16 @@ Los usuarios del sistema se clasifican en dos roles principales:
 
 ## 2. Requerimientos Funcionales
 
-Los datos requeridos para la base de datos genealógica se pueden clasificar en las siguientes categorías principales: **Personas (Individuos)**, **Familias**, **Registros Históricos**, **Fuentes**, **Recuerdos**, **Usuarios** y **Contribuciones/Cambios**.
+Los datos requeridos para la base de datos genealógica se pueden clasificar en las siguientes categorías principales: **Personas (Individuos)**, **Familias**, **Registros Históricos**, **Fuentes**, **Recuerdos**, **Usuarios**, **Contribuciones/Cambios** y **Fusiones**.
 
-*   **Personas (Individuos):** Almacena información sobre cada individuo (nombres, fechas y lugares de eventos vitales, etc.). Incluye un historial de cambios para rastrear la colaboración.
+*   **Personas (Individuos):** Almacena información sobre cada individuo (nombres, fechas y lugares de eventos vitales, etc.). Incluye un historial detallado de cambios y fusiones para rastrear la colaboración.
 *   **Familias:** Define las relaciones entre individuos (padres, hijos, cónyuges), formando la estructura del árbol genealógico.
 *   **Registros Históricos:** Son colecciones de documentos digitalizados como censos, certificados de nacimiento, actas de matrimonio y registros militares. El sistema alberga miles de millones de estos registros.
 *   **Fuentes:** Vínculos que conectan la información de un individuo en el árbol genealógico con un registro histórico que la respalda, proporcionando evidencia para los datos.
 *   **Recuerdos:** Archivos multimedia (fotos, historias escritas, documentos, grabaciones de audio) aportados por los usuarios y asociados a un antepasado para enriquecer la historia de su vida.
 *   **Usuarios:** Información sobre las cuentas de usuario registradas en la plataforma, incluyendo sus preferencias de privacidad y un vínculo a su perfil de "Persona" correspondiente en el árbol.
-*   **Contribuciones y Cambios:** Un registro detallado de todas las modificaciones realizadas por un usuario en los perfiles de los individuos, permitiendo la trazabilidad y la colaboración.
+*   **Contribuciones y Cambios:** Un registro detallado de todas las modificaciones realizadas por un usuario en los perfiles de los individuos. Esto incluye qué campo se cambió, el valor anterior y el nuevo, la fecha y el usuario que hizo el cambio, permitiendo la trazabilidad y la resolución de conflictos.
+*   **Fusiones:** Un registro de los eventos de fusión entre dos perfiles de personas, especificando el perfil que se mantiene, el que se descarta y el usuario que realizó la operación.
 
 El sistema debe soportar un entorno colaborativo donde múltiples usuarios puedan contribuir a los mismos perfiles de individuos fallecidos, gestionar conflictos y fusionar entradas duplicadas para mejorar la precisión y completitud del árbol global.
 
@@ -39,7 +40,7 @@ Los Usuarios Registrados realizan tanto la investigación de su historia familia
 *   **Gestión del Árbol Familiar Colaborativo:**
     *   Crear, ver y expandir el árbol genealógico. El sistema puede autocompletar ramas familiares si encuentra coincidencias en el árbol comunitario.
     *   Añadir y editar información sobre personas, adjuntando fuentes para validar los datos.
-    *   Identificar y fusionar perfiles duplicados para mejorar la calidad del árbol.
+    *   Resolver discrepancias de datos y fusionar perfiles duplicados. Esto incluye tanto la revisión de duplicados sugeridos por el sistema como la capacidad de iniciar una fusión manual entre dos perfiles que el usuario identifique como la misma persona.
     *   Imprimir gráficos del árbol (por ejemplo, gráficos de abanico) para compartir.
 *   **Búsqueda y Acceso a Registros Históricos:**
     *   Buscar en miles de millones de registros históricos por nombre, lugar, colección, etc.
