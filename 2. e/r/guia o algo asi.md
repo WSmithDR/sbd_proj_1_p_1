@@ -48,5 +48,3 @@
 - Edita la fecha de nacimiento de su abuelo → se registra un cambio.
 - Detecta que hay dos perfiles para el mismo abuelo y los fusiona → se registra una fusión.
 - El abuelo tiene relaciones familiares: es hijo de alguien, padre de otros, esposo de alguien más.
-
-¿Te gustaría que te haga una tabla resumen de las relaciones o necesitas ejemplos adicionales de cada relación?
